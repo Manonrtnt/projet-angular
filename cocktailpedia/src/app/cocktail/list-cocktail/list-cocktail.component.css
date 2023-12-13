@@ -1,8 +1,8 @@
 /* Cocktail card */
 .cocktail-card {
-    max-width: 400px;
-    margin: 20px;
-  }
+  max-width: 400px;
+  margin: 20px;
+}
 
 /* Create cocktail or ingredient button */
 .create button {
@@ -11,6 +11,20 @@
 
 /* Cocktail card image */
 .mat-mdc-card-sm-image {
-    width: 120px;
-    height: 120px;
+  width: 150px;
+  height: 150px;
+}
+
+.container {
+  display: flex;
+  margin-left: 15%;
+}
+
+.listCocktail{
+    float: left;
+    width: 100%;
+}
+.showCocktail{
+    float: right;
+    width: 100%;
 }

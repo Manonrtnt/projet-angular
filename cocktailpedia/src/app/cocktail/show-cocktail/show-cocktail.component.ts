@@ -16,6 +16,7 @@ export class ShowCocktailComponent implements OnInit {
   ) { }
 
   ngOnInit(): void  {
+    console.log(this.cocktailId)
     if (this.cocktailId) {
       this.cocktailService.getCocktailById(this.cocktailId).subscribe({
         next: (cocktail) => {

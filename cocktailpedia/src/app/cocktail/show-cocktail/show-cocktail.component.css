@@ -1,13 +1,7 @@
-.container {
-  display: flex;
+.show-cocktail-container{
+    display: flex;
+    margin-right: 15%;
 }
-
-.cocktail-image {
-  flex: 1;
-  padding: 20px; /* Add padding or adjust as needed */
-}
-
 .cocktail-ingredient {
   flex: 1;
-  padding: 20px; /* Add padding or adjust as needed */
 }
