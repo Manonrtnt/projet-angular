@@ -1,23 +1,24 @@
 <form [formGroup]="cocktailForm" (ngSubmit)="onSubmit()">
   <mat-form-field appearance="fill">
-    <mat-label>Name</mat-label>
-    <input matInput formControlName="ma">
+    <mat-label>Name Cocktail</mat-label>
+    <input matInput formControlName="nameCocktail">
   </mat-form-field>
+  <div formGroupName="ingredient">
+    <mat-form-field appearance="fill">
+      <mat-label>Ingredient</mat-label>
+      <mat-select formGroupName="nameIngredient">
+        <mat-option *ngFor="let ingredient of ingredients" value="ingredient">
+          {{ingredient}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>quantity</mat-label>
+      <input type="number" matInput formControlName="quantity">
+    </mat-form-field>
+  </div>
   <mat-form-field appearance="fill">
-    <mat-label>Ingredient</mat-label>
-    <mat-select>
-      <mat-option value="one">First option</mat-option>
-      <mat-option value="two">Second option</mat-option>
-    </mat-select>
+    <mat-label>Image</mat-label>
+    <input matInput formControlName="image">
   </mat-form-field>
-  <mat-form-field appearance="fill">
-    <mat-label>quantity</mat-label>
-    <input type="number" matInput formControlName="quantity">
-  </mat-form-field>
-
   <button mat-raised-button>Basic</button>
-  <!-- <mat-form-field appearance="fill">
-    <mat-label>Textarea</mat-label>
-    <textarea matInput></textarea>
-  </mat-form-field> -->
 </form>
