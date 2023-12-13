@@ -9,11 +9,15 @@ import { ListCocktailComponent } from './list-cocktail/list-cocktail.component';
 import { CocktailService } from './cocktail.service';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { ListIngredientComponent } from './list-ingredient/list-ingredient.component';
 
 @NgModule({
   declarations: [
     CreateCocktailComponent,
-    ListCocktailComponent
+    ListCocktailComponent,
+    ListIngredientComponent
   ],
   imports: [
     CommonModule,
@@ -22,11 +26,14 @@ import { MatButtonModule } from '@angular/material/button';
     MatInputModule,
     ReactiveFormsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule,
+    MatListModule
   ],
   exports: [
     CreateCocktailComponent,
-    ListCocktailComponent
+    ListCocktailComponent,
+    ListIngredientComponent
   ],
   providers: [
     CocktailService
