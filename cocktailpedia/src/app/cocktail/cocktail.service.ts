@@ -17,7 +17,7 @@ export class CocktailService {
         { quantity: "10 cl", name: "sparkling water" },
         { quantity: "10", name: "ice cubes" }
       ],
-      image: "test"
+      image: "https://www.destinationcocktails.fr/wp-content/uploads/2019/11/Cocktail-mojito-1.jpg"
     },
     {
       name: "Tapis rouge",
@@ -26,7 +26,7 @@ export class CocktailService {
         { quantity: "4 cl", name: "cherry liqueur" },
         { quantity: "5", name: "ice cubes" }
       ],
-      image: "test"
+      image: "https://www.destinationcocktails.fr/wp-content/uploads/2018/04/194_tapisrouge-min-1.jpg"
     },
     {
       name: "Cuba Libre",
@@ -35,7 +35,7 @@ export class CocktailService {
         { quantity: "4 cl", name: "lime juice" },
         { quantity: "15 cl", name: "Coca Cola" }
       ],
-      image: "test"
+      image: "https://img.cuisineaz.com/660x660/2013/12/20/i74474-cuba-libre.jpg"
     }
   ];
 
