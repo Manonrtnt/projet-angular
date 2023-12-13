@@ -20,7 +20,6 @@ export class ListCocktailComponent implements OnInit {
   }
 
   viewCocktail(id: string): void {
-    debugger
     this.selectedCocktailId = id;
     console.log(this.selectedCocktailId)
   }
