@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-header>
+    <h2>Creation Cocktail</h2>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="fill">
+        <mat-label>Name Cocktail</mat-label>
+        <input matInput formControlName="nameCocktail">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password">
+      </mat-form-field>
+      <button mat-raised-button>Envoyer</button>
+    </form>
+  </mat-card-header>
+</mat-card>

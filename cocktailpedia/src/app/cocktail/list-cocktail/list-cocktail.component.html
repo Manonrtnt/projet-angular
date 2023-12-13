@@ -1,18 +1,18 @@
  <!-- Cards for cocktail -->
  <mat-card *ngFor="let cocktail of listCocktail" class="cocktail-card">
-  <mat-card-header>
-    <mat-card-title-group>
-      <mat-card-title>{{cocktail.name}}</mat-card-title>
-      <img mat-card-sm-image [src]="cocktail.image" alt="{{ cocktail.name }}" width="120px">
-    </mat-card-title-group>
-  </mat-card-header>
-  <mat-card-actions>
-    <button mat-raised-button>View cocktail</button>
-  </mat-card-actions>
-</mat-card>
+   <mat-card-header>
+     <mat-card-title-group>
+       <mat-card-title>{{cocktail.name}}</mat-card-title>
+       <img mat-card-sm-image [src]="cocktail.image" alt="{{ cocktail.name }}" width="120px">
+     </mat-card-title-group>
+   </mat-card-header>
+   <mat-card-actions>
+     <button mat-button>View cocktail</button>
+   </mat-card-actions>
+ </mat-card>
 
-<!-- Buttons -->
-<mat-card-actions class="create">
-  <button mat-raised-button color="primary">Create Cocktail</button>
-  <button mat-raised-button color="primary">Create Ingredient</button>
-</mat-card-actions>
+ <!-- Buttons -->
+ <mat-card-actions class="create">
+   <button mat-raised-button routerLink="../cocktails/create">Create Cocktail</button>
+   <button mat-raised-button>Create Ingredient</button>
+ </mat-card-actions>

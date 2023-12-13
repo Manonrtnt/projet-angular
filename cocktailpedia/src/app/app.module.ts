@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CocktailModule } from './cocktail/cocktail.module';
+import { AdministrationModule } from './administration/administration.module';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,8 @@ import { CocktailModule } from './cocktail/cocktail.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     CocktailModule,
+    AdministrationModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
