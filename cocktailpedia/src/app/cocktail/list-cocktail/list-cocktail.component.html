@@ -1,5 +1,5 @@
 <!-- Cards for cocktail -->
-<div>
+<div class="container">
   <div class="listCocktail">
     <mat-card *ngFor="let cocktail of listCocktail" class="cocktail-card">
       <mat-card-header>
@@ -20,7 +20,7 @@
     </mat-card-actions>
   </div>
   <div class="showCocktail">
-    <app-show-cocktail *ngIf="selectedCocktailId"></app-show-cocktail>
+    <app-show-cocktail [cocktailId]="selectedCocktailId"></app-show-cocktail>
   </div>
 </div>
 
