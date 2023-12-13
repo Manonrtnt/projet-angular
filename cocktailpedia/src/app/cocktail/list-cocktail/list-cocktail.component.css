@@ -1,0 +1,16 @@
+/* Cocktail card */
+.cocktail-card {
+    max-width: 400px;
+    margin: 20px;
+  }
+
+/* Create cocktail or ingredient button */
+.create button {
+    margin-left: 12px;
+}
+
+/* Cocktail card image */
+.mat-mdc-card-sm-image {
+    width: 120px;
+    height: 120px;
+}
