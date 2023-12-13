@@ -8,6 +8,7 @@ import { Observable, delay, of } from 'rxjs';
 export class CocktailService {
   mockDataCocktails: ICocktail[] = [
     {
+      id : "1",
       name: "Mojito",
       ingredients: [
         { quantity: "6 leaves", name: "mint" },
@@ -20,6 +21,7 @@ export class CocktailService {
       image: "https://www.destinationcocktails.fr/wp-content/uploads/2019/11/Cocktail-mojito-1.jpg"
     },
     {
+      id:"2",
       name: "Tapis rouge",
       ingredients: [
         { quantity: "4 cl", name: "white port" },
@@ -29,6 +31,7 @@ export class CocktailService {
       image: "https://www.destinationcocktails.fr/wp-content/uploads/2018/04/194_tapisrouge-min-1.jpg"
     },
     {
+      id:"3",
       name: "Cuba Libre",
       ingredients: [
         { quantity: "6 cl", name: "Cuban rum (Havana)" },
@@ -43,5 +46,10 @@ export class CocktailService {
 
   getListHeros(): Observable<ICocktail[]> {
     return of(this.mockDataCocktails).pipe(delay(1000));
+  }
+
+  getCocktailById(id: string): Observable<ICocktail | undefined> {
+    const cocktail = this.mockDataCocktails.find(cocktail => cocktail.id === id);
+    return of(cocktail).pipe(delay(500)); // Simulating an asynchronous operation
   }
 }

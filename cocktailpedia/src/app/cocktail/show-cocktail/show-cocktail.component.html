@@ -1,0 +1,12 @@
+<div class="show-cocktail-container">
+    <mat-card *ngIf="cocktail">
+        <mat-card-content>
+            <div class="cocktail-image">
+                <img [src]="cocktail.image" alt="{{ cocktail.name }}">
+            </div>
+            <div class="cocktail-ingredient">
+                <!-- Display other details about the cocktail -->
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

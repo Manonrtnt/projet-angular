@@ -12,12 +12,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { ListIngredientComponent } from './list-ingredient/list-ingredient.component';
+import { ShowCocktailComponent } from './show-cocktail/show-cocktail.component';
 
 @NgModule({
   declarations: [
     CreateCocktailComponent,
     ListCocktailComponent,
-    ListIngredientComponent
+    ListIngredientComponent,
+    ShowCocktailComponent
   ],
   imports: [
     CommonModule,
