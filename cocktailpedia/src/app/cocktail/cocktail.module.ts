@@ -12,6 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { ListIngredientComponent } from './list-ingredient/list-ingredient.component';
+import { CocktailRouterModule } from './cocktail-routing.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ListIngredientComponent } from './list-ingredient/list-ingredient.compo
     MatCardModule,
     MatButtonModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    CocktailRouterModule,
   ],
   exports: [
     CreateCocktailComponent,
