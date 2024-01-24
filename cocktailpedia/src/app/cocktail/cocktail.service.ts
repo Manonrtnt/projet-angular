@@ -50,6 +50,6 @@ export class CocktailService {
 
   getCocktailById(id: string): Observable<ICocktail | undefined> {
     const cocktail = this.mockDataCocktails.find(cocktail => cocktail.id === id);
-    return of(cocktail).pipe(delay(500)); // Simulating an asynchronous operation
+    return of(cocktail).pipe(delay(500));
   }
 }
