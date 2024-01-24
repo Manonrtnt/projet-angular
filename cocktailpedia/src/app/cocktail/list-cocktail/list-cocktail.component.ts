@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { CocktailService } from '../cocktail.service';
 import { ICocktail } from '@cocktail/shared';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list-cocktail',
@@ -8,9 +9,11 @@ import { ICocktail } from '@cocktail/shared';
   styleUrls: ['./list-cocktail.component.css']
 })
 export class ListCocktailComponent implements OnInit {
+
+
   listCocktail!: ICocktail[];
   selectedCocktailId: string | null = null;
-  constructor(private cocktailService: CocktailService) { }
+  constructor(private cocktailService: CocktailService, private router: Router) { }
   ngOnInit(): void {
     this.cocktailService.getListHeros().subscribe({
       next: (listCocktail) => {
@@ -21,6 +24,10 @@ export class ListCocktailComponent implements OnInit {
 
   viewCocktail(id: string): void {
     this.selectedCocktailId = id;
+    this.router.navigate(['/cocktails', 'view', id]);
     console.log(this.selectedCocktailId)
+
   }
+
+
 }

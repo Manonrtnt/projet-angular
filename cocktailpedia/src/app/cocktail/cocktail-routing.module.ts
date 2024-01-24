@@ -5,12 +5,9 @@ import { CreateCocktailComponent } from './create-cocktail/create-cocktail.compo
 import { ShowCocktailComponent } from './show-cocktail/show-cocktail.component';
 import { authGuard } from '../administration/auth.guard';
 const routes: Routes = [
-    {
-        path: 'cocktails', children: [
-            { path: 'cocktails', component: ListCocktailComponent },
-            { path: 'create', component: CreateCocktailComponent, canActivate: [authGuard] },
-            { path: 'id', component: ShowCocktailComponent }],
-    }];
+    { path: 'create', component: CreateCocktailComponent, canActivate: [authGuard] },
+    { path: 'view/:id', component: ShowCocktailComponent }
+];
 
 @NgModule({
     imports: [RouterModule.forChild(routes)],

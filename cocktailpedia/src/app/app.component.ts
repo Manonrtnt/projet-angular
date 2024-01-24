@@ -12,4 +12,9 @@ export class AppComponent {
   addCocktail(newCocktail: ICocktail) {
     console.log(newCocktail);
   }
+  test(id: string): void {
+    console.log(id)
+  }
+
+
 }

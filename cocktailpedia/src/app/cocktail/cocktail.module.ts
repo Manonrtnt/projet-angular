@@ -37,7 +37,8 @@ import { ShowCocktailComponent } from './show-cocktail/show-cocktail.component';
   exports: [
     CreateCocktailComponent,
     ListCocktailComponent,
-    ListIngredientComponent
+    ListIngredientComponent,
+    ShowCocktailComponent
   ],
   providers: [
     CocktailService
