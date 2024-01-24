@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ICocktail, IIngredient } from './models/cocktail.models';
+import { ICocktail, IIngredient } from '@cocktail/shared';
 import { Observable, delay, of } from 'rxjs';
 
 @Injectable({

@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { ICocktail } from '../models/cocktail.models';
+import { ICocktail } from '@cocktail/shared';
 
 @Component({
   selector: 'app-create-cocktail',
