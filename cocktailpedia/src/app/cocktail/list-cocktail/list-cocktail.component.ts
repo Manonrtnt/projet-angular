@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CocktailService } from '../cocktail.service';
-import { ICocktail } from '../models/cocktail.models';
+import { ICocktail } from '@cocktail/shared';
 
 @Component({
   selector: 'app-list-cocktail',
