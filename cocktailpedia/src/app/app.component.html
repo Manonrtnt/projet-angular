@@ -1,2 +1,9 @@
-<app-create-cocktail></app-create-cocktail>
-<app-list-cocktail></app-list-cocktail>
+<!-- <app-create-cocktail (newCocktailEvent)="addCocktail($event)"></app-create-cocktail> -->
+
+<div>
+  <app-list-cocktail></app-list-cocktail>
+  <app-list-ingredient></app-list-ingredient>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>

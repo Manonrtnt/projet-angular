@@ -9,6 +9,7 @@ import { ICocktail } from '../models/cocktail.models';
 })
 export class ListCocktailComponent implements OnInit {
   listCocktail!: ICocktail[];
+  selectedCocktailId: string | null = null;
   constructor(private cocktailService: CocktailService) { }
   ngOnInit(): void {
     this.cocktailService.getListHeros().subscribe({
@@ -18,5 +19,8 @@ export class ListCocktailComponent implements OnInit {
     })
   }
 
-
+  viewCocktail(id: string): void {
+    this.selectedCocktailId = id;
+    console.log(this.selectedCocktailId)
+  }
 }

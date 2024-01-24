@@ -1,4 +1,5 @@
 export interface ICocktail {
+    id: string,
     name: string,
     ingredients: IIngredient[],
     image: string
