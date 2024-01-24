@@ -1,31 +1,31 @@
 <div class="show-cocktail-container">
-    <mat-card *ngIf="cocktail">
-        <mat-card-header>
-            <mat-card-title>{{ cocktail.name }}</mat-card-title>
-            <mat-card-subtitle>Un cocktail délicieux</mat-card-subtitle>
-        </mat-card-header>
+  <mat-card *ngIf="cocktail">
+    <mat-card-header>
+      <mat-card-title>{{ cocktail.name }}</mat-card-title>
+      <mat-card-subtitle>Un cocktail délicieux</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="cocktail-image">
+        <img [src]="cocktail.image" alt="{{ cocktail.name }}">
+      </div>
+      <div class="cocktail-ingredient">
         <mat-card-content>
-            <div class="cocktail-image">
-                <img [src]="cocktail.image" alt="{{ cocktail.name }}">
-            </div>
-            <div class="cocktail-ingredient">
-                <mat-card-content>
-                    <h4>Ingrédients :</h4>
-                    <ul>
-                        <li *ngFor="let ingredient of cocktail.ingredients">
-                            {{ ingredient.name }} - {{ ingredient.quantity }}
-                        </li>
-                    </ul>
-                </mat-card-content>
-            </div>
+          <h4>Ingrédients :</h4>
+          <ul>
+            <li *ngFor="let ingredient of cocktail.ingredients">
+              {{ ingredient.name }} - {{ ingredient.quantity }}
+            </li>
+          </ul>
         </mat-card-content>
-        <mat-card-actions>
-            <button mat-icon-button color="primary">
-                <mat-icon>edit</mat-icon>
-            </button>
-            <button mat-icon-button color="warn">
-                <mat-icon>delete</mat-icon>
-            </button>
-        </mat-card-actions>
-    </mat-card>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-icon-button color="primary">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button color="warn">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
 </div>
